@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block title %}Home Page{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+
+
+<h1>Build Your Professional Resume in Minutes</h1>
+
+<p>
+    Resume Generator is a simple Flask-based web application that helps users
+    create professional resumes quickly and efficiently. Enter your personal
+    details, skills, education, experience, and projects, then generate a
+    clean resume template ready for printing or PDF export.
+</p>
+
+<div class="hero-buttons">
+    <a href="/generate-resume" class="btn-primary">
+        Create Resume
+    </a>
+</div>
+
+
+</section>
+
+<section class="features">
+
+
+<div class="feature-card">
+    <h3>Easy Form Input</h3>
+    <p>
+        Enter your information using a simple and user-friendly form.
+    </p>
+</div>
+
+<div class="feature-card">
+    <h3>Professional Layout</h3>
+    <p>
+        Generate resumes in a clean and professional A4 format.
+    </p>
+</div>
+
+<div class="feature-card">
+    <h3>Instant Preview</h3>
+    <p>
+        View your resume immediately after submitting your details.
+    </p>
+</div>
+
+
+</section>
+
+
+
+{% endblock %}

@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="resume-page">
+
+    <div class="resume-header">
+        <h1>{{ name }}</h1>
+    </div>
+
+    <div class="contact-info">
+        <span>{{ number }}</span>
+        <span>{{ email }}</span>
+        <span>{{ address }}</span>
+    </div>
+
+    <hr>
+
+    <section>
+        <h2>ABOUT ME</h2>
+        <p>{{ career }}</p>
+    </section>
+
+   <section>
+    <h2>SKILLS</h2>
+
+    <div class="skills-grid">
+        {% for skill in skills %}
+            <div class="skill-item">
+                {{ skill }}
+            </div>
+        {% endfor %}
+    </div>
+</section>
+
+<section>
+    <h2>EDUCATION</h2>
+
+    <div class="education-item">
+        <h3>{{ college_name }}</h3>
+
+        <p>{{ degree_name }}</p>
+
+        <p>{{ education_year }}</p>
+
+        <p>CGPA: {{ cgpa }}</p>
+    </div>
+</section>
+
+    <section>
+        <h2>EXPERIENCE</h2>
+        <p>{{ experience }}</p>
+    </section>
+
+
+       <section>
+    <h2>SKILLS</h2>
+
+    <div class="skills-grid">
+        {% for project in projects %}
+            <div class="skill-item">
+                {{ project }}
+            </div>
+        {% endfor %}
+    </div>
+</section>
+
+</div>
+
+{% endblock %}
